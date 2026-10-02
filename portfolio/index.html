@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRI DEVELOPERS • KisanSahayak Smart Agriculture System</title>
+
+    <!-- SEO & Search Engine Meta Tags -->
+    <meta name="description"
+        content="Official website of Team AGRI DEVELOPERS (GIET University) presenting KisanSahayak - An AI and ESP32-S3 IoT whole-farm automation system for precision agriculture.">
+    <meta name="keywords"
+        content="AGRI DEVELOPERS, Agri Developers, KisanSahayak, Kisan Sahayak, Gudla Uday Bhaskar, Gupteswar Mohanty, MSVS Reddy, Smart India Hackathon, GIET University, Smart Agriculture, Farm Automation">
+    <meta name="author" content="Team AGRI DEVELOPERS">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agri-developers.netlify.app/">
+
+    <!-- Favicon and Brand Icons for Google Search and Browsers -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/bg-removed-logo.png">
+    <link rel="apple-touch-icon" href="assets/images/bg-removed-logo.png">
+
+    <!-- Social / Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AGRI DEVELOPERS • KisanSahayak Smart Agriculture System">
+    <meta property="og:description"
+        content="An AI & ESP32-S3 whole-farm automation system for precision contract farming. Engineered by Team AGRI DEVELOPERS.">
+    <meta property="og:url" content="https://agri-developers.netlify.app/">
+    <meta property="og:site_name" content="AGRI DEVELOPERS">
+    <meta property="og:image" content="https://agri-developers.netlify.app/assets/images/bg-removed-logo.png">
+
+    <!-- Schema.org JSON-LD Structured Data for Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://agri-developers.netlify.app/#website",
+          "url": "https://agri-developers.netlify.app/",
+          "name": "AGRI DEVELOPERS",
+          "alternateName": [
+            "Agri Developers",
+            "agridevelopers",
+            "KisanSahayak",
+            "Kisan Sahayak",
+            "kissansahayak",
+            "kissan sahayak"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://agri-developers.netlify.app/#organization",
+          "name": "AGRI DEVELOPERS",
+          "alternateName": [
+            "Team AGRI DEVELOPERS",
+            "KisanSahayak",
+            "agridevelopers",
+            "kissansahayak"
+          ],
+          "url": "https://agri-developers.netlify.app/",
+          "logo": "https://agri-developers.netlify.app/assets/images/bg-removed-logo.png",
+          "image": "https://agri-developers.netlify.app/assets/images/bg-removed-logo.png",
+          "description": "Smart agriculture and whole-farm automation system engineered by Team AGRI DEVELOPERS at GIET University.",
+          "founders": [
+            {
+              "@type": "Person",
+              "name": "Gupteswar Mohanty",
+              "jobTitle": "Founder & CEO"
+            },
+            {
+              "@type": "Person",
+              "name": "Gudla Uday Bhaskar",
+              "jobTitle": "Co-Founder & CTFO"
+            },
+            {
+              "@type": "Person",
+              "name": "M.S.V.S Reddy",
+              "jobTitle": "Co-Founder & COO"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Material Symbols Outlined Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Clean Corporate Light Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ========================================================================
+       TOP NAVIGATION BAR WITH OFFICIAL EMBLEM LOGO
+       ======================================================================== -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#about" class="brand-wrapper" style="text-decoration: none;">
+                <img src="assets/images/bg-removed-logo.png" alt="AGRI DEVELOPERS Official Emblem Logo"
+                    style="width: 44px; height: 44px; object-fit: contain;">
+                <div class="brand-text">
+                    <span class="brand-title">AGRI <span>DEVELOPERS</span></span>
+                    <span class="brand-subtitle">KisanSahayak • GIET University</span>
+                </div>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+    <section id="about" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+
+                <h1 class="hero-heading">
+                    Whole-Farm Automation on a <span class="highlight">Contract-Based Model</span>
+                </h1>
+
+                <p class="hero-summary">
+                    <strong>KisanSahayak</strong> is an end-to-end farm automation and smart agriculture system
+                    engineered to manage farms on a contract-based operational framework. Developed by <strong>Team AGRI
+                        DEVELOPERS</strong>, it continuously monitors soil, crop, and environmental conditions using
+                    sensors and camera/thermal observation to execute automated, targeted irrigation and field
+                    operations.
+                </p>
+
+                <div class="hero-ctas">
+                    <a href="#team" class="btn btn-primary btn-lg">
+                        <span class="material-symbols-outlined">groups</span>
+                        Meet Our Leadership Team
+                    </a>
+                    <a href="#architecture" class="btn btn-secondary btn-lg">
+                        <span class="material-symbols-outlined">memory</span>
+                        System Architecture
+                    </a>
+                </div>
+
+                <!-- System Key Highlights -->
+                <div class="hero-specs-row">
+                    <div class="spec-pill">
+                        <span class="material-symbols-outlined">developer_board</span>
+                        <span>ESP32-S3 Controller</span>
+                    </div>
+                    <div class="spec-pill">
+                        <span class="material-symbols-outlined">water_drop</span>
+                        <span>Zone-Wise Moisture Sensing</span>
+                    </div>
+                    <div class="spec-pill">
+                        <span class="material-symbols-outlined">device_thermostat</span>
+                        <span>Thermal Stress Monitoring</span>
+                    </div>
+                    <div class="spec-pill">
+                        <span class="material-symbols-outlined">rotate_right</span>
+                        <span>Servo Precision Irrigation</span>
+                    </div>
+                    <div class="spec-pill">
+                        <span class="material-symbols-outlined">solar_power</span>
+                        <span>Solar Powered</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Group Photo Banner -->
+            <div class="hero-image-box">
+                <img src="assets/images/team-group-1.jpg" alt="Team AGRI DEVELOPERS with KisanSahayak System"
+                    style="object-position: center 65%;">
+                <div class="hero-image-caption">
+                    <span class="caption-team">Team AGRI DEVELOPERS</span>
+                    <span class="caption-sub">KisanSahayak Smart Agriculture System</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       PROBLEM & SOLUTION (FROM STARTUP.DOCX)
+       ======================================================================== -->
+    <section id="solution" class="contrast-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Core Mission & Value Proposition</span>
+                </div>
+                <h2 class="section-title">Solving the <span class="text-green">Agricultural Monitoring Bottleneck</span>
+                </h2>
+                <p class="section-subtitle">
+                    Transforming traditional farming from manual observation and guesswork into an autonomous,
+                    data-driven management system.
+                </p>
+            </div>
+
+            <div class="contrast-grid">
+                <!-- The Problem -->
+                <div class="contrast-card problem-card">
+                    <div class="contrast-card-header">
+                        <span class="contrast-badge badge-red">Existing Problem</span>
+                    </div>
+                    <h3 class="contrast-title">Conventional & Fragmented Monitoring</h3>
+                    <p class="contrast-desc">
+                        Current farming practices largely depend on manual monitoring and conventional flood or
+                        timer-based irrigation.
+                    </p>
+                    <ul class="contrast-bullets">
+                        <li>
+                            <span class="material-symbols-outlined">cancel</span>
+                            <span><strong>Separate Inspections:</strong> Crop health, pest activity, soil conditions,
+                                and water requirements are checked in isolation.</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">cancel</span>
+                            <span><strong>Delayed Interventions:</strong> Lack of continuous monitoring leads to late
+                                detection of crop stress and pest infestations.</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">cancel</span>
+                            <span><strong>Resource Inefficiency:</strong> Uniform irrigation wastes substantial water
+                                and electricity in zones that do not require it.</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">cancel</span>
+                            <span><strong>Manual Burden:</strong> Farmers spend extensive hours walking fields and
+                                manually operating pump valves.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- The Solution -->
+                <div class="contrast-card solution-card">
+                    <div class="contrast-card-header">
+                        <span class="contrast-badge badge-green">Proposed Solution</span>
+                    </div>
+                    <h3 class="contrast-title">Autonomous Whole-Farm Automation</h3>
+                    <p class="contrast-desc">
+                        KisanSahayak provides an end-to-end automation system designed specifically for a contract-based
+                        farm management model.
+                    </p>
+                    <ul class="contrast-bullets">
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span><strong>Multi-Modal Sensing:</strong> Combines soil moisture and environmental sensors
+                                with camera and thermal imaging.</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span><strong>Early Stress & Insect Detection:</strong> Detects micro-temperature spikes
+                                (thermal stress) and visual foliar damage early.</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span><strong>Targeted Precision Irrigation:</strong> Calculates exact water volume per
+                                quadrant and directs a servo nozzle to spray only where needed.</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span><strong>Contract-Based Farm Management:</strong> Relieves farmers from routine daily
+                                labor while optimizing water, electricity, and yield.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- In Simple Terms Flow -->
+            <div class="transform-flow-banner">
+                <div class="flow-step-box">
+                    <div class="flow-step-number" style="background: #dc2626;">1</div>
+                    <div class="flow-step-text">
+                        <strong>Traditional Model</strong>
+                        <span>Farmer monitors → decides → operates manually</span>
+                    </div>
+                </div>
+
+                <span class="material-symbols-outlined flow-arrow">arrow_forward</span>
+
+                <div class="flow-step-box">
+                    <div class="flow-step-number">2</div>
+                    <div class="flow-step-text">
+                        <strong>KisanSahayak Model</strong>
+                        <span>System monitors → analyzes → decides → automates operations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       SYSTEM ARCHITECTURE & TECHNICAL APPROACH (FROM SIH PPT)
+       ======================================================================== -->
+    <section id="architecture" class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Technical Architecture</span>
+                </div>
+                <h2 class="section-title">Hardware & AI <span class="text-green">System Approach</span></h2>
+                <p class="section-subtitle">
+                    Designed with modular, low-cost, and robust industrial components to ensure high field reliability
+                    for small and large farms.
+                </p>
+            </div>
+
+            <div class="tech-grid">
+                <!-- 1. Sensing Layer -->
+                <div class="tech-card">
+                    <div class="tech-icon-box">
+                        <span class="material-symbols-outlined">sensors</span>
+                    </div>
+                    <h3 class="tech-card-title">1. Sensing & Ingestion Layer</h3>
+                    <p class="tech-card-desc">
+                        An <strong>ESP32-S3 microcontroller</strong> interfaces with multi-zone capacitive soil moisture
+                        sensors and environmental monitors to collect real-time data from each farm quadrant.
+                    </p>
+                    <div class="tech-tag-list">
+                        <span class="tech-tag">ESP32-S3</span>
+                        <span class="tech-tag">Moisture Probes</span>
+                        <span class="tech-tag">Zone Telemetry</span>
+                    </div>
+                </div>
+
+                <!-- 2. Thermal & Camera Observation -->
+                <div class="tech-card">
+                    <div class="tech-icon-box">
+                        <span class="material-symbols-outlined">videocam</span>
+                    </div>
+                    <h3 class="tech-card-title">2. Thermal & Visual Monitoring</h3>
+                    <p class="tech-card-desc">
+                        Integrated thermal sensors detect crop canopy temperature variations (indicating transpiration
+                        stress), while high-resolution cameras observe leaf surface health and insect activity.
+                    </p>
+                    <div class="tech-tag-list">
+                        <span class="tech-tag">Thermal Imaging</span>
+                        <span class="tech-tag">Insect Detection</span>
+                        <span class="tech-tag">Canopy Stress</span>
+                    </div>
+                </div>
+
+                <!-- 3. Decision Engine -->
+                <div class="tech-card">
+                    <div class="tech-icon-box">
+                        <span class="material-symbols-outlined">analytics</span>
+                    </div>
+                    <h3 class="tech-card-title">3. Intelligent Decision Engine</h3>
+                    <p class="tech-card-desc">
+                        Raw sensor readings are computed against crop-specific agronomic thresholds to determine the
+                        exact water volume and priority index needed for each individual farm quadrant.
+                    </p>
+                    <div class="tech-tag-list">
+                        <span class="tech-tag">Threshold Logic</span>
+                        <span class="tech-tag">Moisture Budget</span>
+                        <span class="tech-tag">Water Optimization</span>
+                    </div>
+                </div>
+
+                <!-- 4. Precision Servo Targeting -->
+                <div class="tech-card">
+                    <div class="tech-icon-box">
+                        <span class="material-symbols-outlined">track_changes</span>
+                    </div>
+                    <h3 class="tech-card-title">4. Targeted Servo Nozzle (0,0)</h3>
+                    <p class="tech-card-desc">
+                        A high-torque servo motor positioned at origin coordinate <code>(0,0)</code> physically rotates
+                        the delivery nozzle toward the designated farm quadrant requiring irrigation.
+                    </p>
+                    <div class="tech-tag-list">
+                        <span class="tech-tag">Servo Actuation</span>
+                        <span class="tech-tag">Directional Spray</span>
+                        <span class="tech-tag">Quadrant Delivery</span>
+                    </div>
+                </div>
+
+                <!-- 5. Relay-Controlled Pump -->
+                <div class="tech-card">
+                    <div class="tech-icon-box">
+                        <span class="material-symbols-outlined">water_pump</span>
+                    </div>
+                    <h3 class="tech-card-title">5. Precision Pump Actuation</h3>
+                    <p class="tech-card-desc">
+                        An industrial relay-controlled pump activates for the precise duration required to deliver the
+                        calculated water volume, shutting off automatically to eliminate wastage.
+                    </p>
+                    <div class="tech-tag-list">
+                        <span class="tech-tag">Relay Control</span>
+                        <span class="tech-tag">Automated Shutoff</span>
+                        <span class="tech-tag">Zero Overwatering</span>
+                    </div>
+                </div>
+
+                <!-- 6. Solar Autonomy & AI Web/Mobile -->
+                <div class="tech-card">
+                    <div class="tech-icon-box">
+                        <span class="material-symbols-outlined">wb_sunny</span>
+                    </div>
+                    <h3 class="tech-card-title">6. Solar Autonomy & Cloud AI</h3>
+                    <p class="tech-card-desc">
+                        Operates independently in remote agricultural fields using solar power support. Field data and
+                        imagery sync to web and mobile apps for farmer dashboards and crop advisory.
+                    </p>
+                    <div class="tech-tag-list">
+                        <span class="tech-tag">Solar Powered</span>
+                        <span class="tech-tag">Mobile AI App</span>
+                        <span class="tech-tag">Contract Dashboard</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       LEADERSHIP & CORE FOUNDING TEAM (REAL USER PHOTOS)
+       ======================================================================== -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Leadership & Founding Team</span>
+                </div>
+                <h2 class="section-title">The Engineers & Agronomists of <span class="text-green">AGRI DEVELOPERS</span>
+                </h2>
+                <p class="section-subtitle">
+                    Combining academic research authority in Agricultural Science (B.Sc Ag) with Computer Science &
+                    AI/ML engineering from GIET University.
+                </p>
+            </div>
+
+            <!-- All 7 Team Members — Unified Card Grid -->
+            <div class="founders-grid">
+                <!-- 1. GUPTESWAR MOHONTY - FOUNDER & CEO -->
+                <div class="founder-profile-card">
+                    <div class="founder-photo-container">
+                        <span class="founder-dept-tag">B.Sc (Ag)</span>
+                        <img src="assets/images/gupta.jpg" alt="Gupteswar Mohonty - Founder & CEO">
+                    </div>
+                    <div class="founder-info-body">
+                        <div class="founder-role-badge">Founder & Chief Executive Officer</div>
+                        <h3 class="founder-name-text">Gupteswar Mohonty
+                            <span class="me-chip">OWNER</span>
+                        </h3>
+                        <div class="founder-meta-row">
+                            <span class="material-symbols-outlined">school</span>
+                            <span>B.Sc Agriculture • Reg: 24BAG151 (GIET)</span>
+                        </div>
+                        <p class="founder-bio-text">
+                            Spearheading strategic vision, farmer outreach, and agricultural agronomy modeling. Guides
+                            soil fertility calibration, plant nutrition schedules, and contract farm operations.
+                        </p>
+                        <div class="founder-contact-card">
+                            <div class="contact-meta-item">
+                                <span class="material-symbols-outlined">call</span>
+                                <span>+91 96681 23111</span>
+                            </div>
+                            <span class="contact-email-text">24bag151.gupteswarmohanty@giet.edu</span>
+                            <div class="founder-btn-group">
+                                <a href="tel:+919668123111" class="founder-action-btn btn-call-action">
+                                    <span class="material-symbols-outlined" style="font-size: 16px;">call</span>
+                                    Call
+                                </a>
+                                <a href="https://wa.me/919668123111?text=Hello%20Gupteswar,%20connecting%20regarding%20KisanSahayak"
+                                    target="_blank" class="founder-action-btn btn-wa-action">
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. GUDLA UDAY BHASKAR - CO-FOUNDER & CTO -->
+                <div class="founder-profile-card founder-card-highlight">
+                    <div class="founder-photo-container">
+                        <span class="founder-me-badge">
+                            <span class="material-symbols-outlined" style="font-size: 14px;">verified</span>
+                            Portfolio DESIGNER
+                        </span>
+                        <span class="founder-dept-tag">CSE(AI & ML)</span>
+                        <img src="assets/images/uday.jpg" alt="Gudla Uday Bhaskar - Co-Founder & CTO">
+                    </div>
+                    <div class="founder-info-body">
+                        <div class="founder-role-badge">Co-Founder & Chief Technology & Financial Officer (CTFO)</div>
+                        <h3 class="founder-name-text">
+                            Gudla Uday Bhaskar
+                            <span class="me-chip">OWNER</span>
+                        </h3>
+                        <div class="founder-meta-row">
+                            <span class="material-symbols-outlined">memory</span>
+                            <span>CSE (AI & ML) • Reg: 25CSEAIML (GIET)</span>
+                        </div>
+                        <p class="founder-bio-text">
+                            The CTFO is a unique hybrid executive who owns both the deep-tech engineering and the
+                            financial engine of KisanSahayak. This single leader bridges the gap between complex
+                            edge-computing hardware and startup fiscal strategy, ensuring our agritech solutions are
+                            both technologically groundbreaking and financially viable.
+                        </p>
+                        <div class="founder-contact-card">
+                            <div class="contact-meta-item">
+                                <span class="material-symbols-outlined">call</span>
+                                <span>+91 78941 75342</span>
+                            </div>
+                            <span class="contact-email-text">25cseaiml.gudlaudaybhaskar@giet.edu</span>
+                            <div class="founder-social-row">
+                                <a href="https://www.linkedin.com/in/gudla-uday-bhaskar-a53403385?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="founder-social-btn btn-social-linkedin" title="Connect on LinkedIn">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.54a1.64 1.64 0 0 0-1.66 1.64 1.65 1.65 0 0 0 1.66 1.65 1.64 1.64 0 0 0 1.65-1.65c0-.9-.74-1.64-1.65-1.64Z" />
+                                    </svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://www.instagram.com/uday_____32531?stkn=djJ2a21kaG50YTZr" target="_blank"
+                                    rel="noopener noreferrer" class="founder-social-btn btn-social-insta"
+                                    title="Follow on Instagram">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                            <div class="founder-btn-group">
+                                <a href="tel:+917894175342" class="founder-action-btn btn-call-action">
+                                    <span class="material-symbols-outlined" style="font-size: 16px;">call</span>
+                                    Call
+                                </a>
+                                <a href="https://wa.me/917894175342?text=Hello%20Uday,%20connecting%20regarding%20KisanSahayak%20Tech"
+                                    target="_blank" class="founder-action-btn btn-wa-action">
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. M.S.V.S REDDY - CO-FOUNDER & COO -->
+                <div class="founder-profile-card">
+                    <div class="founder-photo-container">
+                        <span class="founder-dept-tag">B.Sc (Ag)</span>
+                        <img src="assets/images/siva.jpg" alt="M.S.V.S Reddy - Co-Founder & COO">
+                    </div>
+                    <div class="founder-info-body">
+                        <div class="founder-role-badge">Co-Founder & Chief Operating Officer</div>
+                        <h3 class="founder-name-text">M.S.V.S Reddy
+                            <span class="me-chip">OWNER</span>
+                        </h3>
+                        <div class="founder-meta-row">
+                            <span class="material-symbols-outlined">school</span>
+                            <span>B.Sc Agriculture • Reg: 25BAG145 (GIET)</span>
+                        </div>
+                        <p class="founder-bio-text">
+                            Leading field trial validation, hardware packaging for rugged farm environments, contract
+                            farming operational logistics, and partner farmer producer organization (FPO) onboarding.
+                        </p>
+                        <div class="founder-contact-card">
+                            <div class="contact-meta-item">
+                                <span class="material-symbols-outlined">call</span>
+                                <span>+91 82609 84206</span>
+                            </div>
+                            <span class="contact-email-text">25bag145.mallidisivavenkatareddy@giet.edu</span>
+                            <div class="founder-btn-group">
+                                <a href="tel:+918260984206" class="founder-action-btn btn-call-action">
+                                    <span class="material-symbols-outlined" style="font-size: 16px;">call</span>
+                                    Call
+                                </a>
+                                <a href="https://wa.me/918260984206?text=Hello%20Mr.%20Reddy,%20connecting%20regarding%20KisanSahayak%20Operations"
+                                    target="_blank" class="founder-action-btn btn-wa-action">
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. AMIT KUMAR PADHI - CPO -->
+                <div class="founder-profile-card">
+                    <div class="founder-photo-container">
+                        <span class="founder-dept-tag">B.Sc (Ag)</span>
+                        <img src="assets/images/amit.jpg" alt="Amit Kumar Padhi - Chief Product Officer">
+                    </div>
+                    <div class="founder-info-body">
+                        <div class="founder-role-badge">Chief Product Officer (CPO)</div>
+                        <h3 class="founder-name-text">Amit Kumar Padhi</h3>
+                        <div class="founder-meta-row">
+                            <span class="material-symbols-outlined">school</span>
+                            <span>B.Sc Agriculture • Reg: 24BAG019 (GIET)</span>
+                        </div>
+                        <p class="founder-bio-text">
+                            Leads product roadmap, agritech solution design, and prototype development cycles for
+                            KisanSahayak's IoT hardware and software suite.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- 5. SHIB SANKET HOTA - CFO -->
+                <div class="founder-profile-card">
+                    <div class="founder-photo-container">
+                        <span class="founder-dept-tag">B.Sc (Ag)</span>
+                        <img src="assets/images/shib.jpg" alt="Shib Sanket Hota - Chief Financial Officer">
+                    </div>
+                    <div class="founder-info-body">
+                        <div class="founder-role-badge">Head of IoT Operations</div>
+                        <h3 class="founder-name-text">Shib Sanket Hota</h3>
+                        <div class="founder-meta-row">
+                            <span class="material-symbols-outlined">school</span>
+                            <span>B.Sc Agriculture • Reg: 25BAG136 (GIET)</span>
+                        </div>
+                        <p class="founder-bio-text">
+                            Chief architect of KisanSahayak's ESP32-S3 IoT hardware, servo-control quadrant logic,
+                            thermal sensing pipelines, and deep learning computer vision algorithms for crop disease
+                            detection.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- 6. RAMA KRUSHNA ROUT - AGRICULTURE & RESEARCH LEAD -->
+                <div class="founder-profile-card">
+                    <div class="founder-photo-container">
+                        <span class="founder-dept-tag">B.Sc (Ag)</span>
+                        <img src="assets/images/rama.jpg" alt="Rama Krushna Rout - Agriculture & Research Lead">
+                    </div>
+                    <div class="founder-info-body">
+                        <div class="founder-role-badge">Agriculture &amp; Research Lead</div>
+                        <h3 class="founder-name-text">Rama Krushna Rout</h3>
+                        <div class="founder-meta-row">
+                            <span class="material-symbols-outlined">school</span>
+                            <span>B.Sc Agriculture • Reg: 24BAG097 (GIET)</span>
+                        </div>
+                        <p class="founder-bio-text">
+                            Directs crop science research, sensor agronomy calibration, field trial documentation, and
+                            agricultural data analysis for the system.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- 7. PRASHANT KUMAR DASH - AGRONOMY & FIELD OPERATIONS -->
+                <div class="founder-profile-card">
+                    <div class="founder-photo-container">
+                        <span class="founder-dept-tag">B.Sc (Ag)</span>
+                        <img src="assets/images/prashant.jpg" alt="Prashant Kumar Dash - Agronomy & Field Operations">
+                    </div>
+                    <div class="founder-info-body">
+                        <div class="founder-role-badge">Agronomy &amp; Field Operations</div>
+                        <h3 class="founder-name-text">Prashant Kumar Dash</h3>
+                        <div class="founder-meta-row">
+                            <span class="material-symbols-outlined">school</span>
+                            <span>B.Sc Agriculture • Reg: 24BAG145 (GIET)</span>
+                        </div>
+                        <p class="founder-bio-text">
+                            Focusing on precision agronomy, crop health diagnostics, soil sensor field evaluations, and
+                            sustainable cultivation protocols for the KisanSahayak initiative.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Real Field Work & Team Demonstration Gallery -->
+            <div id="field-work">
+                <div class="team-gallery-heading">
+                    <h4>Team AGRI DEVELOPERS in Action</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Field trial sessions, sensor calibration,
+                        and prototype assembly</p>
+                </div>
+
+                <div class="team-photos-grid">
+                    <div class="team-photo-item">
+                        <img src="assets/images/team-banner.jpg" alt="Team AGRI DEVELOPERS Project Presentation">
+                        <div class="team-photo-label">
+                            <span>Project Presentation & Demonstration</span>
+                            <span class="loc-tag">GIET University</span>
+                        </div>
+                    </div>
+                    <div class="team-photo-item">
+                        <img src="assets/images/team-group-2.jpg"
+                            alt="Team AGRI DEVELOPERS testing ESP32 hardware and sensors">
+                        <div class="team-photo-label">
+                            <span style="font-weight: 700; color: var(--primary-green-dark); font-size: 0.95rem;">INDIA
+                                INNOVATES 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+       FEASIBILITY, VIABILITY & FARM IMPACT (FROM SIH PPT)
+       ======================================================================== -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span class="dot"></span>
+                    <span>Feasibility & Field Impact</span>
+                </div>
+                <h2 class="section-title">Built for Real-World <span class="text-green">Economic Viability</span></h2>
+                <p class="section-subtitle">
+                    Designed specifically to be affordable, scalable, and practical for small, marginal, and commercial
+                    farm plots.
+                </p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-box">
+                    <div class="impact-icon">
+                        <span class="material-symbols-outlined">water</span>
+                    </div>
+                    <h3 class="impact-title">Water Conservation</h3>
+                    <p class="impact-desc">
+                        Supplies water strictly according to the actual moisture requirement of each quadrant, cutting
+                        typical agricultural water loss by up to 40%.
+                    </p>
+                </div>
+
+                <div class="impact-box">
+                    <div class="impact-icon">
+                        <span class="material-symbols-outlined">savings</span>
+                    </div>
+                    <h3 class="impact-title">Reduced Input Costs</h3>
+                    <p class="impact-desc">
+                        Minimizes unnecessary pumping electricity, reduces fertilizer runoff, and decreases reliance on
+                        costly manual labor for routine valve monitoring.
+                    </p>
+                </div>
+
+                <div class="impact-box">
+                    <div class="impact-icon">
+                        <span class="material-symbols-outlined">eco</span>
+                    </div>
+                    <h3 class="impact-title">Improved Crop Health</h3>
+                    <p class="impact-desc">
+                        Continuous thermal and camera inspection identifies disease, pest, and nutrient stress before
+                        irreversible crop damage or yield penalty occurs.
+                    </p>
+                </div>
+
+                <div class="impact-box">
+                    <div class="impact-icon">
+                        <span class="material-symbols-outlined">trending_up</span>
+                    </div>
+                    <h3 class="impact-title">Better Yield Potential</h3>
+                    <p class="impact-desc">
+                        Root-zone moisture is maintained in the optimal agronomic band continuously, fostering stronger
+                        root systems and higher harvest quality.
+                    </p>
+                </div>
+
+                <div class="impact-box">
+                    <div class="impact-icon">
+                        <span class="material-symbols-outlined">attach_money</span>
+                    </div>
+                    <h3 class="impact-title">Low-Cost & Accessible</h3>
+                    <p class="impact-desc">
+                        Uses affordable, readily available components like ESP32-S3, capacitive sensors, high-torque
+                        servos, and mini pumps to keep unit costs accessible.
+                    </p>
+                </div>
+
+                <div class="impact-box">
+                    <div class="impact-icon">
+                        <span class="material-symbols-outlined">grid_view</span>
+                    </div>
+                    <h3 class="impact-title">High Scalability & Modular</h3>
+                    <p class="impact-desc">
+                        Easily scales from a 4-quadrant setup to coordinate-level precision grids, greenhouse nurseries,
+                        and orchards without redesigning the core system.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ========================================================================
+       SITE FOOTER WITH LOGO & BRAND DETAILS
+       ======================================================================== -->
+    <footer class="site-footer">
+        <!-- ========================================================================
+       CONTACT SECTION
+       ======================================================================== -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <span class="dot"></span>
+                        <span>Contact & Collaboration</span>
+                    </div>
+                    <h2 class="section-title">Connect with <span class="text-green">Team AGRI DEVELOPERS</span></h2>
+                    <p class="section-subtitle">
+                        Interested in field trials, academic collaboration, or partnering on contract-based smart
+                        agriculture? Send us a message.
+                    </p>
+                </div>
+
+                <div class="contact-layout">
+                    <!-- Contact Info -->
+                    <div class="contact-info-panel">
+                        <div class="info-item-row">
+                            <div class="info-icon-sq">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div>
+                                <div class="info-label-sub">Direct Project Inbox</div>
+                                <div class="info-title-main">
+                                    <a href="mailto:gudlaudaybhaskar@gmail.com"
+                                        style="color: var(--primary-green-dark);">gudlaudaybhaskar@gmail.com</a>
+                                </div>
+                                <span style="font-size: 0.85rem; color: var(--text-muted);">Inquiries delivered directly
+                                    to
+                                    Gudla Uday Bhaskar</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item-row">
+                            <div class="info-icon-sq">
+                                <span class="material-symbols-outlined">person</span>
+                            </div>
+                            <div>
+                                <div class="info-label-sub">Founder & CEO Line</div>
+                                <div class="info-title-main">
+                                    <a href="tel:+919668123111" style="color: var(--primary-green-dark);">Gupteswar
+                                        Mohanty
+                                        (+91 96681 23111)</a>
+                                </div>
+                                <span
+                                    style="font-size: 0.85rem; color: var(--text-muted);">24bag151.gupteswarmohanty@giet.edu</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item-row">
+                            <div class="info-icon-sq">
+                                <span class="material-symbols-outlined">terminal</span>
+                            </div>
+                            <div>
+                                <div class="info-label-sub">Co-Founder & CTO Line</div>
+                                <div class="info-title-main">
+                                    <a href="tel:+917894175342" style="color: var(--primary-green-dark);">Gudla Uday
+                                        Bhaskar
+                                        (+91 78941 75342)</a>
+                                </div>
+                                <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">
+                                    gudlaudaybhaskar@gmail.com</div>
+                                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px;">
+                                    <a href="https://www.linkedin.com/in/gudla-uday-bhaskar-a53403385?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                        target="_blank" rel="noopener noreferrer"
+                                        style="display: inline-flex; align-items: center; gap: 5px; font-size: 0.8rem; font-weight: 600; color: #0284c7; background: #e0f2fe; padding: 4px 10px; border-radius: 6px; border: 1px solid #bae6fd;">
+                                        <span>LinkedIn Profile ↗</span>
+                                    </a>
+                                    <a href="https://www.instagram.com/uday_____32531?stkn=djJ2a21kaG50YTZr"
+                                        target="_blank" rel="noopener noreferrer"
+                                        style="display: inline-flex; align-items: center; gap: 5px; font-size: 0.8rem; font-weight: 600; color: #db2777; background: #fdf2f8; padding: 4px 10px; border-radius: 6px; border: 1px solid #fbcfe8;">
+                                        <span>Instagram ↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-item-row">
+                            <div class="info-icon-sq">
+                                <span class="material-symbols-outlined">agriculture</span>
+                            </div>
+                            <div>
+                                <div class="info-label-sub">Co-Founder & COO Line</div>
+                                <div class="info-title-main">
+                                    <a href="tel:+918260984206" style="color: var(--primary-green-dark);">M.S.V.S Reddy
+                                        (+91
+                                        82609 84206)</a>
+                                </div>
+                                <span
+                                    style="font-size: 0.85rem; color: var(--text-muted);">25bag145.mallidisivavenkatareddy@giet.edu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form (Netlify & Email Enabled) -->
+                    <div class="contact-form-card">
+                        <form id="contactForm" onsubmit="return false;">
+                            <div class="form-two-col">
+                                <div class="form-group-item">
+                                    <label for="userName">Full Name</label>
+                                    <input type="text" id="userName" name="name" required placeholder="Your Name">
+                                </div>
+                                <div class="form-group-item">
+                                    <label for="userPhone">Phone Number</label>
+                                    <input type="tel" id="userPhone" name="phone" required
+                                        placeholder="+91 98765 43210">
+                                </div>
+                            </div>
+
+                            <div class="form-two-col">
+                                <div class="form-group-item">
+                                    <label for="userEmail">Email Address</label>
+                                    <input type="email" id="userEmail" name="email" required
+                                        placeholder="yourname@domain.com">
+                                </div>
+                                <div class="form-group-item">
+                                    <label for="userCategory">I am contacting as...</label>
+                                    <select id="userCategory" name="category" required>
+                                        <option value="Farmer / Landowner">Farmer / Landowner</option>
+                                        <option value="Farmer Producer Organization (FPO)">Farmer Producer Organization
+                                            (FPO)</option>
+                                        <option value="Academic / Agri-Researcher">Academic / Agri-Researcher</option>
+                                        <option value="Hackathon Evaluator / Govt Official">Hackathon Evaluator / Govt
+                                            Official</option>
+                                        <option value="Investor / Agritech Partner">Investor / Agritech Partner</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group-item">
+                                <label for="userMsg">Message / Inquiry</label>
+                                <textarea id="userMsg" name="message" rows="4" required
+                                    placeholder="Let us know how we can collaborate on KisanSahayak..."></textarea>
+                            </div>
+
+                            <div class="direct-contact-actions"
+                                style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 6px;">
+                                <button type="button" id="btnSendGmail" class="btn"
+                                    style="padding: 13px 16px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 0.95rem; border-radius: var(--radius-md); background: #ea4335; border: 1px solid #dc2626; color: #ffffff; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(234, 67, 53, 0.25);">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
+                                        <path
+                                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                    </svg>
+                                    <span>Send via Email / Gmail</span>
+                                </button>
+                                <button type="button" id="btnSendWA" class="btn"
+                                    style="padding: 13px 16px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 0.95rem; border-radius: var(--radius-md); background: #16a34a; border: 1px solid #15803d; color: #ffffff; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(22, 163, 74, 0.25);">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
+                                        <path
+                                            d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.13.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3" />
+                                    </svg>
+                                    <span>Send via WhatsApp</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Clean Mobile & Form Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
